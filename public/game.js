@@ -3,11 +3,10 @@ var config = {
     width: 800,
     height: 800,
     physics:{
-
-    default:'arcade',
-    arcade:{
-        gravity:{y: 0}
-    }
+        default:'arcade',
+        arcade:{
+            gravity:{y: 0}
+        }
     },
 
     scene: {
@@ -80,6 +79,7 @@ function create ()
     weapon.bulletKillType = Phaser.Weapon.KILL_WORLD_BOUNDS;
     weapon.bulletSpeed = 500;
     weapon.fireRate = 100;
+}
 
 function update ()
 {
@@ -113,5 +113,4 @@ function update ()
         player.anims.play('face', true);
 
     }
-}
 }
