@@ -72,7 +72,7 @@ function create ()
     this.anims.create({
         key: 'face',
         frames: [ {key: 'dude', frame: 1} ],
-        framRate: 20
+        framRate: 10
     })
 
     //weapon = game.add.weapon(30, 'bullet');
@@ -83,26 +83,56 @@ function create ()
 
 function update ()
 {
-    if (cursors.left.isDown)
+    // handle up and left motion
+    if (cursors.left.isDown && cursors.up.isDown)
     {
+        player.setVelocityY(-160);
         player.setVelocityX(-160);
         player.anims.play('left', true);
-
+    }
+    // handle up and left motion
+    else if (cursors.left.isDown && cursors.down.isDown)
+    {
+        player.setVelocityY(160);
+        player.setVelocityX(-160);
+        player.anims.play('left', true);
+    }
+    // handle up and left motion
+    else if (cursors.right.isDown && cursors.up.isDown)
+    {
+        player.setVelocityY(-160);
+        player.setVelocityX(160);
+        player.anims.play('right', true);
+    }
+    // handle up and left motion
+    else if (cursors.right.isDown && cursors.down.isDown)
+    {
+        player.setVelocityY(160);
+        player.setVelocityX(160);
+        player.anims.play('right', true);
+    }
+    else if (cursors.left.isDown)
+    {
+        player.setVelocityY(0);
+        player.setVelocityX(-160);
+        player.anims.play('left', true);
     }
     else if (cursors.right.isDown)
     {
+        player.setVelocityY(0);
         player.setVelocityX(160);
         player.anims.play('right', true);
-
     }
     else if (cursors.up.isDown)
     {
+        player.setVelocityX(0);
         player.setVelocityY(-160);
         player.anims.play('up', true);
 
     }
     else if (cursors.down.isDown)
     {
+        player.setVelocityX(0);
         player.setVelocityY(160);
         player.anims.play('down', true);
     }
@@ -110,7 +140,8 @@ function update ()
     {
         player.setVelocityX(0);
         player.setVelocityY(0);
-        player.anims.play('face', true);
+
+        player.anims.stop();
 
     }
 }
