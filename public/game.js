@@ -75,10 +75,10 @@ function create ()
         framRate: 20
     })
 
-    weapon = game.add.weapon(30, 'bullet');
-    weapon.bulletKillType = Phaser.Weapon.KILL_WORLD_BOUNDS;
-    weapon.bulletSpeed = 500;
-    weapon.fireRate = 100;
+    //weapon = game.add.weapon(30, 'bullet');
+    //weapon.bulletKillType = Phaser.Weapon.KILL_WORLD_BOUNDS;
+    //weapon.bulletSpeed = 500;
+    //weapon.fireRate = 100;
 }
 
 function update ()
