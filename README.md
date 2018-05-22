@@ -1,9 +1,12 @@
+This is....
 
+# Fantasy Cage Match!
+A game that pits you (or a much more handsome digital representation of you) against hordes of enemies in a fight to the death! (And then immediate resurrection!). 
 
+## Attack System
 
-
-
-
+## Leveling System
+I envision a "passive" levelling system, where you player increases his/her skill stats not by allocating points to some skill, but instead by actually using the weapon they want to get better at. So if you want your character to have better magic skills, then actually give the character a staff and let him fight with it, and your character will suck with it at first, but over time they will get better with it. 
 
 
 Git flow and commands:
