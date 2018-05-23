@@ -1,4 +1,4 @@
-#Current issues.
+# Current issues.
 This is where I am going to list any problems I run into while coding and can't seem to figure out on my own.
 
 ## Issue with MIME in ES6?
