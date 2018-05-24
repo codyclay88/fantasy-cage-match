@@ -1,11 +1,18 @@
 # Current issues.
 This is where I am going to list any problems I run into while coding and can't seem to figure out on my own.
 
-## Issue with MIME in ES6?
-When I try to preview the game in the browser I get this error:
+## texture loading problem. 5/24 @ 12:53AM
+I know I am extremely close. I got the game to load once with the background and the player character on screen, but now when I try to load the game, I get:
 
-``Failed to load module script: The server responded with a non-JavaScript MIME type of "text/html". Strict MIME type checking is enforced for module scripts per HTML spec.``
+''Uncaught TypeError: Cannot read property 'texture' of undefined''
 
-I tried to mess with the index.html file, but I think I broke something.
+It seems that in my splash.js state, is not loading or passing my sprites properly.
 
-Other than that, let me know what you think of the more modular code.
+Also, I had to recode a ton of stuff AGAIN today because I was still using a ton of Phaser 2 syntax with Phaser 3. Things will get alot better when they actually publish Phaser 3 docs on Phaser.io. All API docs are currently for 2.x.x
+
+Much too tired to try to figure this out tonight. However, once we have this figured out, the code will be much more modular and we will be able to easily add other scenes like ''main menu'' or possibly a ''Game Over'' screen.
+
+That is all.
+Lukas.
+
+
