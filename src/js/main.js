@@ -25,7 +25,7 @@ const game = new Phaser.Game(config)
 function preload(){
     this.load.spritesheet('dude', 
         'assets/sprite.png',
-        { frameWidth: 16, frameHeight: 32 }
+        { frameWidth: 16, frameHeight: 20 }
     );
     this.load.image('background', 'assets/map.png');
 }
