@@ -77,7 +77,7 @@ class Player{
     }
 
     uiSetup(){
-        this.scoreText = this.game.add.text(16, 16, 'FCM Classes - Test Build', { fontSize: '32px', fill: '#000'})
+        this.scoreText = this.game.add.text(16, 16, 'Fantasy Cage Match - Test Build', { fontSize: '32px', fill: 'white'})
     }
 
     update(){

@@ -17,7 +17,7 @@ class Preload extends Phaser.Scene
         this.load.on('complete', function (){
             progress.destroy();
         });
-
+        
         this.load.image('menubg', 'assets/mainmenu.png');
         this.load.image('startbutton', 'assets/startbutton.png');
         this.load.image('background', 'assets/map.png');
