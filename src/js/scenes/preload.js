@@ -19,7 +19,8 @@ class Preload extends Phaser.Scene
         });
         
         this.load.image('menubg', 'assets/mainmenu.png');
-        this.load.image('startbutton', 'assets/startbutton.png');
+        this.load.spritesheet('startbutton', 'assets/startbuttonsprite.png',
+            {frameWidth:250, frameHeight: 100});
         this.load.image('background', 'assets/map.png');
         this.load.spritesheet('dude', 'assets/sprite.png',
             {frameWidth: 16, frameHeight: 20});
